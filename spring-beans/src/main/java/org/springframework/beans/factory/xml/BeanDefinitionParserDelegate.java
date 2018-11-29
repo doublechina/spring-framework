@@ -523,6 +523,7 @@ public class BeanDefinitionParserDelegate {
 
 			parseConstructorArgElements(ele, bd);
 			parsePropertyElements(ele, bd);
+			//解析<Bean>元素的qualifier属性
 			parseQualifierElements(ele, bd);
 
 			bd.setResource(this.readerContext.getResource());

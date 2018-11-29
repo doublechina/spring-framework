@@ -490,6 +490,7 @@ public class DispatcherServlet extends FrameworkServlet {
 	 */
 	@Override
 	protected void onRefresh(ApplicationContext context) {
+		//Strategy 策略模式
 		initStrategies(context);
 	}
 
